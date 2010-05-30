@@ -1,0 +1,15 @@
+
+README file for DirHog.rb
+
+Copyright (c) XPUtah (Jeff Grover and Zhon Johansen) 2000-2002.  All rights reserved.
+
+This is a little Ruby script to calculate what directories or files are using up the most disk space.  Type "ruby dirhog.rb" without any command-line arguments to get the usage instructions:
+
+Usage:  ruby dirhog.rb start_directory [max_items] [files|dirs]
+
+Examples:
+   dirhog C:          = 100 dirs (default) on C drive using most space
+   dirhog . 10 files  = 10 largest files in current sub-directories
+
+The progress through directories is printed to STDERR, so if you want to re-direct the STDOUT output (i.e., "ruby dirhog.rb C: > disk_usage.txt") the output will be "clean", but you can still see progress through the directories.
+
