@@ -6,12 +6,7 @@
 
 # Calculates what directories or files are using up the most disk space
 
-# Bug in UNIX version of 'find' = if you don't have permissions to open
-# a visited directory, it will quit by raising an exception. You can 
-# use "findfault" (fault-tolerant find) to catch the exception, and
-# avoid this behavior... (or just login as root with the original "find"!)
-
-require 'find'      # find has a bug
+require 'find'  
 
 if $0 == __FILE__
 
